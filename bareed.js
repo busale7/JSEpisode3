@@ -44,17 +44,17 @@ class Wallet {
   // implement Wallet!
   constructor(x) {
     this.money =x ||0;
-    this.credit =0 ;
-    this.debit =0;
+    
 
 
   }
 
   credit(amount) {
-
+    this.money +=amount;
   }
 
   debit(amount) {
+    this.money -=amount;
 
   }
 }
