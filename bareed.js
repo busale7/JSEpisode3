@@ -59,6 +59,7 @@ class Wallet {
   }
 }
 
+
 /**********************************************************
 * Person - defines a person with a name and feelings
 *
@@ -71,7 +72,11 @@ class Wallet {
 * let person = new Person(name, x, y);
 **********************************************************/
 class Person {
-  // implement Person!
+  constructor(name,x,y){
+    this.name=name;
+    this.location = new Point(x,y);
+    this.wallet =0;
+  }
 }
 
 
