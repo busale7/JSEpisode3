@@ -75,7 +75,10 @@ class Person {
   constructor(name,x,y){
     this.name=name;
     this.location = new Point(x,y);
-    this.wallet =0;
+    this.wallet = new Wallet(0);
+  }
+  moveTo(newLocation){
+     this.location = newLocation ;
   }
 }
 
